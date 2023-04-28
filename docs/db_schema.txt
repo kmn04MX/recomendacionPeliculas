@@ -1,0 +1,48 @@
+# https://app.quickdatabasediagrams.com/#/
+
+
+usuario
+---
+usuario_id int pk
+nombre varchar
+apellido1 varchar
+apellido2 varchar
+alias varchar
+edad int
+genero varchar
+correo varchar
+password varchar
+token varchar
+creado Date
+modificado Date
+
+catalogo
+--
+catalogo_id int pk
+nombre varchar
+descripcion varchar
+creado Date
+modificado Date
+
+favorito
+--
+favorito_id int pk
+api_id int
+usuario_id int fk >- usuario.usuario_id
+nombre_completo varchar
+catalogo_id int fk >- catalogo.catalogo_id
+creado Date
+modificado Date
+
+recomendacion
+--
+id int pk
+title varchar
+overview varchar
+poster_path varchar
+release_date varchar
+usuario_id int fk >- usuario.usuario_id
+catalogo_id int fk >- catalogo.catalogo_id 
+genre_ids varchar
+creado Date
+modificado Date

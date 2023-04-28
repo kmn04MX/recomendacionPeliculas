@@ -1,0 +1,18 @@
+export default interface FormaUsuario {
+    nombre : string,
+    apellido1 : string,
+    apellido2? : string,
+    alias : string,
+    correo : string,
+    edad? : string,
+    genero : string,
+    password : string,
+    genero_favorito_id : string,
+    genero_favorito_nombre : string,
+    actor_favorito_id : string,
+    actor_favorito_nombre : string,
+    dir_favorito_id : string,
+    dir_favorito_nombre : string,
+    peli_favorita_id : string,
+    peli_favorita_nombre : string,
+}
